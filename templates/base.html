@@ -1,0 +1,163 @@
+<!doctype html>
+{% load static %}
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <title>СИЗ</title>
+    {% block style %}
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <!-- Fontawessome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!-- Custom styles for this template -->
+        <style>
+            main > .container {
+                padding: 60px 15px 0;
+            }
+
+            #main_margin {
+                margin-left: 200px;
+
+            }
+
+            #header1 {
+                background-color: #383838;
+                width:100%;
+                border: 2px solid #B0B0B0;
+                height: 50px;
+
+            }
+
+            .header ul li a{
+                display: block;
+                padding: 15px 30px;
+                color: red;
+                font-size: 16px;
+                position: relative;
+                font: italic 1.2em "Fira Sans", serif;
+            }
+
+            .footer {
+                background-color: #383838;
+                width:100%;
+                position:fixed;
+                bottom:0;
+                margin-top: auto;
+                border: 2px solid #B0B0B0;
+            }
+
+            .footer > .container {
+                padding-right: 0px;
+                margin-left: 0px;
+            }
+
+            .header > .container {
+                padding-right: 0px;
+                margin-left: 0px;
+            }
+
+            #header_link1 {
+                color: red;
+                font: italic 1.2em "Fira Sans", serif;
+            }
+
+            #header_auto {
+                color: red;
+                font: italic 1.2em "Fira Sans", serif;
+            }
+
+
+            #space {
+                margin: 10px;
+                text-align: center;
+            }
+
+            #center {
+                margin: 10px;
+                text-align: center;
+                margin: 0;
+            }
+
+            .sidebar {
+                position:absolute;
+                background-color: #383838;
+                width: 175px;
+                height: 100%;
+                top: 48px;
+                bottom: 0px;
+                float: left;
+                border: 2px solid #B0B0B0;
+            }
+
+            .sidebar ul li a{
+                display: block;
+                padding: 15px 0px;
+                color: red;
+                font-size: 16px;
+                position: relative;
+                font: italic 1.2em "Fira Sans", serif;
+            }
+
+            #sidebar_ul {
+                padding-left: 20px;
+            }
+
+        </style>
+    {% endblock %}
+</head>
+
+<body class="d-flex flex-column h-100">
+
+
+{% include 'inc/inc-header.html' %}
+
+<div class="sidebar">
+
+<ul style="list-style-type:none;" id="sidebar_ul">
+    <li>
+        <a href="#" class="active">
+            <span class="item"><u>Новости</u></span>
+        </a>
+    </li>
+        <li>
+        <a href="#" class="active">
+            <span class="item"><u>Документация</u></span>
+        </a>
+    </li>
+        <li>
+        <a href="#" class="active">
+            <span class="item"><u>О нас</u></span>
+        </a>
+    </li>
+    <li><a href="#" class="inline"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="#" class="inline"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#" class="inline"><i class="fab fa-snapchat"></i></a></li>
+    <li><a href="#" class="inline"><i class="fab fa-instagram"></i> </a></li>
+    <li><a href="#" class="inline"><i class="fab fa-youtube"></i></a></li>
+</ul>
+
+
+
+
+</div>
+
+<!-- Begin page content -->
+<main role="main" class="mt-3 flex-shrink-0" id="main_margin">
+    {% block content %}
+    {% endblock %}
+</main>
+
+{% include 'inc/inc-footer.html' %}
+
+<!-- Optional JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" crossorigin="anonymous"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" crossorigin="anonymous"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"></script>
+</body>
+</html>

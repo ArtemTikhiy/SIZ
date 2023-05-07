@@ -1,0 +1,53 @@
+{% load static %}
+<header xmlns:text-color="http://www.w3.org/1999/xhtml">
+    <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center" id="header1">
+        <a class="navbar-brand" href="{% url 'home' %}" id="header_link1">
+            Место для логотипа
+            <!--            <img src="{% static 'images/logo.png' %}" width="128" height="32" alt="">-->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="navbar-collapse collapse w-100" id="navbarCollapse">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="header_link1">
+                            Производители
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="header_link1">
+                            Рейтинг
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="header_link1">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+    <!--            {% if request.user.is_authenticated %}-->
+    <!--                <span style="color: white">Welcome, {{request.user.username }}</span>-->
+    <!--                <a class="btn btn-outline-info" href="#">Logout</a>-->
+    <!--            {% else %}-->
+    <!--            <form method="post" action="#">{% csrf_token %}-->
+    <!--                <input name="username"  type="text" placeholder="username">-->
+    <!--                <input name="password"  type="password" placeholder="password">-->
+    <!--                <button type="submit">login</button>-->
+    <!--            </form>-->
+                    <li>
+                        <a class="btn btn-outline-danger" href="#">
+                            Авторизация
+                        </a>
+                    </li>
+                </ul>
+            </div>
+<!--            {% endif %}-->
+    </nav>
+</header>
+
+
